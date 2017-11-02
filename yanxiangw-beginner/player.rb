@@ -4,6 +4,11 @@ class Player
       warrior.attack!
       return
     end
+
+    if warrior.health < 8
+      warrior.rest!
+      return
+    end
     warrior.walk!
   end
 end
